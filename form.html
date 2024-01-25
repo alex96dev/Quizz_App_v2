@@ -8,6 +8,22 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <h1>Add new Card</h1>
+    <main>
+      <form class="add_new_card">
+        <div class="label1_textarea1_wrapper">
+          <label for="question" class="label_question">Your Question:</label>
+          <textarea class="textarea_question" id="question"></textarea>
+        </div>
+        <div class="label2_textarea2_wrapper">
+          <label for="answer" class="label_answer">Your Answer:</label>
+          <textarea class="textarea_answer" id="answer"></textarea>
+        </div>
+        <div class="label3_input1_wrapper">
+          <label for="input_tag" class="label_tag">Tag:</label>
+          <input type="text" id="input_tag" class="tag" />
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
   </body>
 </html>

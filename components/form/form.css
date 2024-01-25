@@ -1,0 +1,65 @@
+.add_new_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.textarea_question {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.textarea_answer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tag {
+  width: 100%;
+}
+
+.label_question {
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  top: -14%;
+  left: 0;
+}
+
+.label_answer {
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  top: -14%;
+  left: 0;
+}
+
+.label_tag {
+  font-size: large;
+  font-weight: bold;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.label1_textarea1_wrapper {
+  position: relative;
+  width: 70vh;
+  height: 30vh;
+}
+
+.label2_textarea2_wrapper {
+  position: relative;
+  width: 70vh;
+  height: 30vh;
+}
+
+.label3_input1_wrapper {
+  position: relative;
+  width: 70vh;
+}

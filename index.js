@@ -13,12 +13,8 @@ bookmarkButton.addEventListener("click", () => {
 
 showAnswerButton.addEventListener("click", () => {
   showAnswer.classList.toggle("hidden");
-  //showAnswer.classList.hidden;
-  //showAnswerButton.textContent == " Show answer " ? showAnswerButton.textContent =
-  // " Hide answer " : showAnswerButton.textContent = " Show answer ";
-  showAnswerButton.textContent =
-    showAnswerButton.textContent === "Show answer"
-      ? "Hide answer"
-      : "Show answer";
-  console.log("hallo");
+
+  showAnswerButton.textContent.trim() === "Show answer"
+    ? (showAnswerButton.textContent = "Hide answer")
+    : (showAnswerButton.textContent = "Show answer");
 });
