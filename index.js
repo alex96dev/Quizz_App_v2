@@ -1,20 +1,20 @@
 // phew… not a lot going on here. Please add some code!
 
 const bookmarkButton = document.querySelector('[data-js="button_Bookmark"]');
-const showAnswerButton = document.querySelector('[data-js="button_showanswer"]');
+const showAnswerButton = document.querySelector(
+  '[data-js="button_showanswer"]'
+);
 const showAnswer = document.querySelector('[data-js="showanswer"]');
 
-
 bookmarkButton.addEventListener("click", () => {
-    bookmarkButton.classList.toggle("bookmark--active");
-    console.log("hello");
-})
+  bookmarkButton.classList.toggle("bookmark--active");
+  console.log("hello");
+});
 
 showAnswerButton.addEventListener("click", () => {
-    showAnswer.classList.toggle("hidden");
-    //showAnswer.classList.hidden;
-    //showAnswerButton.textContent == " Show answer " ? showAnswerButton.textContent = 
-   // " Hide answer " : showAnswerButton.textContent = " Show answer ";
-showAnswerButton.textContent = showAnswerButton.textContent === "Show answer" ? 
-"Hide answer" : "Show answer";
-console.log("hallo");})
+  showAnswer.classList.toggle("hidden");
+  //showAnswer.classList.hidden;
+  showAnswerButton.textContent.trim() === "Show answer"
+    ? (showAnswerButton.textContent = "Hide answer")
+    : (showAnswerButton.textContent = "Show answer");
+});
